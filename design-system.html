@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="design-system.css" />
+    <title>Design System | To My Love</title>
+  </head>
+  <body>
+    <header class="ds-header">
+      <a href="index.html" class="ds-back-link">&larr; Back to Site</a>
+      <h1 class="ds-page-title">Design System</h1>
+      <p class="ds-page-subtitle">
+        Colors, fonts &amp; typography used across "To My Love"
+      </p>
+    </header>
+
+    <main class="ds-main">
+      <section class="ds-section" id="colors">
+        <h2 class="ds-section-title">Colors</h2>
+        <p class="ds-section-desc">
+          A bold crimson anchors the palette, supported by neutral backgrounds
+          and text tones.
+        </p>
+
+        <div class="ds-color-grid">
+          <div class="ds-color-card">
+            <div
+              class="ds-color-swatch"
+              style="background-color: #c8102e"
+            ></div>
+            <div class="ds-color-info">
+              <span class="ds-color-name">Primary Red</span>
+              <span class="ds-color-value">#c8102e</span>
+              <span class="ds-color-var">--primary-color</span>
+            </div>
+          </div>
+          <div class="ds-color-card">
+            <div
+              class="ds-color-swatch"
+              style="background-color: #f5f5f5; border-bottom: 1px solid #ddd"
+            ></div>
+            <div class="ds-color-info">
+              <span class="ds-color-name">Background</span>
+              <span class="ds-color-value">#f5f5f5</span>
+              <span class="ds-color-var">--background-color</span>
+            </div>
+          </div>
+          <div class="ds-color-card">
+            <div
+              class="ds-color-swatch"
+              style="background-color: #000000"
+            ></div>
+            <div class="ds-color-info">
+              <span class="ds-color-name">Text</span>
+              <span class="ds-color-value">black</span>
+              <span class="ds-color-var">--text-color</span>
+            </div>
+          </div>
+          <div class="ds-color-card">
+            <div
+              class="ds-color-swatch"
+              style="background-color: #ffffff; border-bottom: 1px solid #ddd"
+            ></div>
+            <div class="ds-color-info">
+              <span class="ds-color-name">White</span>
+              <span class="ds-color-value">#ffffff</span>
+              <span class="ds-color-var">headings, button text</span>
+            </div>
+          </div>
+          <div class="ds-color-card">
+            <div
+              class="ds-color-swatch"
+              style="background-color: #333333"
+            ></div>
+            <div class="ds-color-info">
+              <span class="ds-color-name">Dark Grey</span>
+              <span class="ds-color-value">#333</span>
+              <span class="ds-color-var">footer border</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ds-section" id="fonts">
+        <h2 class="ds-section-title">Fonts</h2>
+        <p class="ds-section-desc">
+          Two typefaces pair emotion with clarity — a hand-lettered display face
+          for headings and a clean sans-serif for body text.
+        </p>
+
+        <div class="ds-font-grid">
+          <div class="ds-font-card">
+            <p class="ds-font-card-title">HeartLand</p>
+            <p class="ds-font-card-source">
+              Custom local file &middot; fonts/heart-land.TTF
+            </p>
+            <p class="ds-font-preview ds-font-preview-heartland">
+              Happy Valentines Day Love
+            </p>
+            <p class="ds-font-chars ds-font-preview-heartland">
+              A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+            </p>
+            <p class="ds-font-chars ds-font-preview-heartland">
+              a b c d e f g h i j k l m n o p q r s t u v w x y z
+            </p>
+            <p class="ds-font-chars ds-font-preview-heartland">
+              0 1 2 3 4 5 6 7 8 9
+            </p>
+          </div>
+          <div class="ds-font-card">
+            <p class="ds-font-card-title">Oswald</p>
+            <p class="ds-font-card-source">
+              Google Fonts &middot; weights 200 &ndash; 700
+            </p>
+            <p class="ds-font-preview ds-font-preview-oswald">
+              Every day with you is a poem that writes itself.
+            </p>
+            <p class="ds-font-chars ds-font-preview-oswald">
+              A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+            </p>
+            <p class="ds-font-chars ds-font-preview-oswald">
+              a b c d e f g h i j k l m n o p q r s t u v w x y z
+            </p>
+            <p class="ds-font-chars ds-font-preview-oswald">
+              0 1 2 3 4 5 6 7 8 9
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="ds-section" id="typography">
+        <h2 class="ds-section-title">Typography</h2>
+        <p class="ds-section-desc">
+          The type scale used across the site, from the hero heading down to
+          small-body text.
+        </p>
+
+        <div class="ds-type-scale">
+          <div class="ds-type-row">
+            <div class="ds-type-label">
+              <span class="ds-type-size">2.8rem</span>
+              <span class="ds-type-usage">h1 &middot; Hero heading</span>
+            </div>
+            <p
+              class="ds-type-sample"
+              style="
+                font-family: &quot;HeartLand&quot;, cursive;
+                font-size: 2.8rem;
+                color: #c8102e;
+              "
+            >
+              Happy Valentines Day Love
+            </p>
+          </div>
+
+          <div class="ds-type-row">
+            <div class="ds-type-label">
+              <span class="ds-type-size">2.4rem</span>
+              <span class="ds-type-usage">h2 &middot; Section titles</span>
+            </div>
+            <p
+              class="ds-type-sample"
+              style="
+                font-family: &quot;HeartLand&quot;, cursive;
+                font-size: 2.4rem;
+                color: #c8102e;
+              "
+            >
+              Poems
+            </p>
+          </div>
+
+          <div class="ds-type-row">
+            <div class="ds-type-label">
+              <span class="ds-type-size">1.3rem</span>
+              <span class="ds-type-usage"
+                >Body &middot; Poems &amp; reasons text</span
+              >
+            </div>
+            <p
+              class="ds-type-sample"
+              style="
+                font-family: &quot;Oswald&quot;, sans-serif;
+                font-size: 1.3rem;
+              "
+            >
+              Every day with you is a poem that writes itself.
+            </p>
+          </div>
+
+          <div class="ds-type-row">
+            <div class="ds-type-label">
+              <span class="ds-type-size">14px</span>
+              <span class="ds-type-usage">Buttons &middot; Actions</span>
+            </div>
+            <p
+              class="ds-type-sample"
+              style="
+                font-family: &quot;Oswald&quot;, sans-serif;
+                font-size: 14px;
+              "
+            >
+              Need another reason? click me!
+            </p>
+          </div>
+
+          <div class="ds-type-row">
+            <div class="ds-type-label">
+              <span class="ds-type-size">14px</span>
+              <span class="ds-type-usage">Small text &middot; Footer</span>
+            </div>
+            <p
+              class="ds-type-sample"
+              style="
+                font-family: &quot;Oswald&quot;, sans-serif;
+                font-size: 14px;
+              "
+            >
+              Made With Love By Isaac Shosanya
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="ds-footer">
+      <span>Made With Love By Isaac Shosanya</span>
+      <a href="index.html">Back to site &rarr;</a>
+    </footer>
+  </body>
+</html>
