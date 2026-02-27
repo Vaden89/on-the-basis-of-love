@@ -28,8 +28,31 @@ nextPoemBtn.addEventListener("click", () => {
 
 reasonForLoveBtn.addEventListener("click", newReasonForLove);
 
-fetchPoems();
-fetchReasonsForLove();
+const savedData = localStorage.getItem("loveMessageData");
+
+if (savedData) {
+  const data = JSON.parse(savedData);
+  const greetingText = document.getElementById("greeting-text");
+  const giftTitleText = document.getElementById("gift-title-text");
+  const giftDescText = document.getElementById("gift-desc-text");
+  const giftImg = document.getElementById("gift-img");
+  const closingTextEl = document.getElementById("closing-text-el");
+
+  if (greetingText) greetingText.innerText = data.greeting;
+  if (giftTitleText) giftTitleText.innerText = data.giftTitle;
+  if (giftDescText) giftDescText.innerText = data.giftDesc;
+  if (giftImg) giftImg.src = data.giftImage;
+  if (closingTextEl) closingTextEl.innerText = data.closingText;
+
+  poems = data.poems;
+  reasonsForLove = data.reasons;
+
+  poemContainer.innerText = poems[currentPoemIndex];
+  reasonForLoveContainer.innerText = reasonsForLove[currentReasonIndex];
+} else {
+  fetchPoems();
+  fetchReasonsForLove();
+}
 
 function fetchPoems() {
   fetch("/data/poems.json")
@@ -55,9 +78,12 @@ function fetchReasonsForLove() {
 }
 
 function newReasonForLove() {
-  const randomNumber = Math.floor(Math.random() * 5);
+  if (reasonsForLove.length <= 1) return;
 
-  if (randomNumber === currentReasonIndex) newReasonForLove();
+  let randomNumber;
+  do {
+    randomNumber = Math.floor(Math.random() * reasonsForLove.length);
+  } while (randomNumber === currentReasonIndex);
 
   currentReasonIndex = randomNumber;
   reasonForLoveContainer.innerText = reasonsForLove[currentReasonIndex];
