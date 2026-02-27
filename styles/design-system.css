@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
+@font-face {
+  font-style: normal;
+  font-weight: normal;
+  font-family: "HeartLand";
+  src: url("/fonts/heart-land.TTF") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #1a1a1a;
+  font-family: "Oswald", sans-serif;
+  line-height: 1.6;
+}
+
+.ds-header {
+  background-color: #c8102e;
+  color: white;
+  padding: 48px 24px;
+  text-align: center;
+}
+
+.ds-back-link {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 0.95rem;
+  margin-bottom: 16px;
+}
+
+.ds-back-link:hover {
+  color: white;
+}
+
+.ds-page-title {
+  font-family: "HeartLand", cursive;
+  font-size: 3rem;
+  letter-spacing: 1px;
+}
+
+.ds-page-subtitle {
+  margin-top: 8px;
+  font-size: 1.1rem;
+  font-weight: 300;
+  opacity: 0.85;
+}
+
+.ds-main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.ds-section {
+  margin-bottom: 56px;
+}
+
+.ds-section-title {
+  font-family: "HeartLand", cursive;
+  font-size: 2.2rem;
+  color: #c8102e;
+  margin-bottom: 8px;
+}
+
+.ds-section-desc {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 24px;
+  max-width: 600px;
+}
+
+.ds-color-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.ds-color-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.ds-color-swatch {
+  height: 90px;
+}
+
+.ds-color-info {
+  padding: 12px 14px;
+}
+
+.ds-color-name {
+  display: block;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+.ds-color-value {
+  display: block;
+  font-size: 0.85rem;
+  color: #777;
+  font-family: monospace;
+}
+
+.ds-color-var {
+  display: block;
+  font-size: 0.8rem;
+  color: #aaa;
+  font-family: monospace;
+  margin-top: 2px;
+}
+
+.ds-font-grid {
+  display: grid;
+  gap: 24px;
+}
+
+.ds-font-card {
+  background: white;
+  border-radius: 10px;
+  padding: 24px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.ds-font-card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.ds-font-card-source {
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 16px;
+}
+
+.ds-font-preview {
+  font-size: 2.4rem;
+  line-height: 1.3;
+  margin-bottom: 8px;
+  word-break: break-word;
+}
+
+.ds-font-preview-heartland {
+  font-family: "HeartLand", cursive;
+  color: #c8102e;
+}
+
+.ds-font-preview-oswald {
+  font-family: "Oswald", sans-serif;
+  color: #1a1a1a;
+}
+
+.ds-font-chars {
+  font-size: 1rem;
+  color: #666;
+  letter-spacing: 2px;
+  margin-top: 8px;
+}
+
+.ds-type-scale {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ds-type-row {
+  background: white;
+  border-radius: 10px;
+  padding: 20px 24px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.ds-type-label {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.ds-type-size {
+  font-size: 0.8rem;
+  font-family: monospace;
+  background: #f0f0f0;
+  padding: 2px 8px;
+  border-radius: 4px;
+  color: #555;
+}
+
+.ds-type-usage {
+  font-size: 0.8rem;
+  color: #999;
+}
+
+.ds-type-sample {
+  word-break: break-word;
+}
+
+.ds-footer {
+  text-align: center;
+  padding: 20px 24px;
+  border-top: 1px dotted #333;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.ds-footer a {
+  color: #c8102e;
+  text-decoration: none;
+  margin-left: 8px;
+}
+
+.ds-footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .ds-page-title {
+    font-size: 2.2rem;
+  }
+
+  .ds-color-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+
+  .ds-font-preview {
+    font-size: 1.8rem;
+  }
+
+  .ds-type-row {
+    padding: 16px;
+  }
+}
