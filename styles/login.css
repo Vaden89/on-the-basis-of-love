@@ -1,0 +1,27 @@
+a {
+    color: var(--primary-color);
+}
+
+#landing-section {
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    gap: 24px;
+}
+
+.auth-form > button {
+    color: white;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    border: none;
+    margin-top: 4px;
+}
+
+#home-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+}

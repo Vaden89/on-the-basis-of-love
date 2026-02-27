@@ -1,0 +1,224 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/base.css" />
+    <link rel="stylesheet" href="/styles/dashboard.css" />
+    <link rel="stylesheet" href="/styles/components.css" />
+    <title>To My Love | Dashboard</title>
+  </head>
+  <body>
+    <main>
+      <nav>
+        <h1>LoveBuilder</h1>
+        <div>
+          <button id="create-btn">+ Create</button>
+          <div>
+            <span id="name-text"></span>
+          </div>
+        </div>
+      </nav>
+      <section>
+        <div>
+          <h2>Welcome back, <span>Isaac!</span></h2>
+          <p style="color: #676767">
+            Ready to build something special for a special someone, family or
+            just something cute for a friend?
+          </p>
+        </div>
+        <div class="grid-layout-4">
+          <div id="create-card">
+            <span>+</span>
+            <span>Start a new project</span>
+            <span>Choose a template or start blank</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span
+        >Made With Love By Isaac Shosanya |
+        <a href="design-system.html">Design System</a></span
+      >
+    </footer>
+
+    <div id="create-modal" class="modal-overlay" style="display: none">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Create Love Message</h2>
+          <button class="close-btn" id="close-modal-btn">&times;</button>
+        </div>
+        <div class="modal-body">
+          <form id="create-form" class="styled-form">
+            <div class="styled-form-group">
+              <label class="styled-label" for="greeting">Greeting</label>
+              <div class="styled-input-wrapper">
+                <svg
+                  class="input-icon"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+
+                <input
+                  type="text"
+                  id="greeting"
+                  class="styled-input"
+                  placeholder="Happy Valentines Day Love"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="styled-form-group">
+              <label class="styled-label">Poems</label>
+              <div id="poems-list" class="styled-items-list"></div>
+              <div class="styled-input-wrapper textarea-wrapper">
+                <textarea
+                  id="poem-input"
+                  class="styled-input styled-textarea"
+                  placeholder="Every moment with you is like a beautiful dream..."
+                  rows="3"
+                ></textarea>
+                <span class="char-count">0/500</span>
+              </div>
+              <button
+                type="button"
+                id="add-poem-btn"
+                class="styled-btn secondary-btn"
+              >
+                Add Poem
+              </button>
+            </div>
+
+            <div class="styled-form-group">
+              <label class="styled-label">Reasons for Love</label>
+              <div id="reasons-list" class="styled-items-list"></div>
+              <div class="styled-input-wrapper textarea-wrapper">
+                <textarea
+                  id="reason-input"
+                  class="styled-input styled-textarea"
+                  placeholder="Enter a reason..."
+                  rows="3"
+                ></textarea>
+                <span class="char-count">0/500</span>
+              </div>
+              <button
+                type="button"
+                id="add-reason-btn"
+                class="styled-btn secondary-btn"
+              >
+                Add Reason
+              </button>
+            </div>
+
+            <div class="styled-form-group">
+              <label class="styled-label" for="gift-title">Gift Title</label>
+              <div class="styled-input-wrapper">
+                <input
+                  type="text"
+                  id="gift-title"
+                  class="styled-input"
+                  placeholder="My Gift To You"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="styled-form-group">
+              <label class="styled-label" for="gift-desc"
+                >Gift Description</label
+              >
+              <div class="styled-input-wrapper textarea-wrapper">
+                <textarea
+                  id="gift-desc"
+                  class="styled-input styled-textarea"
+                  placeholder="Describe your gift..."
+                  required
+                  rows="3"
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="styled-form-group">
+              <label class="styled-label" for="gift-image"
+                >Gift Image (Image Select)</label
+              >
+              <div class="styled-input-wrapper">
+                <svg
+                  class="input-icon"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                  <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                  <polyline points="21 15 16 10 5 21"></polyline>
+                </svg>
+                <select id="gift-image" class="styled-input" required>
+                  <option value="/images/flower.jpg">Flower</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="styled-form-group">
+              <label class="styled-label" for="closing-text"
+                >Closing Text</label
+              >
+              <div class="styled-input-wrapper">
+                <input
+                  type="text"
+                  id="closing-text"
+                  class="styled-input"
+                  placeholder="I LOVE YOU"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="modal-footer">
+              <button type="submit" class="styled-btn primary-btn">
+                Generate Shareable Page
+              </button>
+            </div>
+          </form>
+
+          <p
+            id="success-msg"
+            style="
+              display: none;
+              margin-top: 16px;
+              color: green;
+              font-weight: 600;
+              text-align: center;
+            "
+          >
+            Message generated!
+            <a
+              href="/preview.html"
+              style="color: var(--primary-color); text-decoration: underline"
+              >Click here to view</a
+            >.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/dashboard.js"></script>
+  </body>
+</html>

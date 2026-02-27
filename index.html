@@ -3,50 +3,90 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>To My Love</title>
+    <link rel="stylesheet" href="/styles/base.css" />
+    <link rel="stylesheet" href="/styles/landing.css" />
+    <link rel="stylesheet" href="/styles/components.css" />
+    <title>LoveBuilder | Create Beautiful Messages For Your Loved Ones</title>
   </head>
   <body>
+    <nav class="site-nav">
+      <h1>LoveBuilder</h1>
+      <ul class="site-nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="/sign-up.html" class="nav-cta">Get Started</a></li>
+      </ul>
+    </nav>
+
     <main>
-      <section id="landing-section">
-        <h1>Happy Valentines Day Love</h1>
-        <div id="stacking-hearts"></div>
-      </section>
-      <section id="poems-section">
-        <div>
-          <h2>Poems</h2>
-          <div>
-            <button id="previous-poem-btn"><-</button>
-            <button id="next-poem-btn">-></button>
+      <section id="home" class="hero-section">
+        <div class="hero-content">
+          <h1>Build Beautiful Love Messages</h1>
+          <p>
+            Create personalized poems, heartfelt reasons, and surprise gifts for
+            your special someone — all wrapped in a beautiful shareable page.
+          </p>
+          <a href="/sign-up.html" class="hero-btn">Start Building</a>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-card">
+            <span class="hero-card-icon">&#10084;</span>
+            <span class="hero-card-title">Poems</span>
+            <span class="hero-card-desc">Write and share heartfelt poetry</span>
+          </div>
+          <div class="hero-card">
+            <span class="hero-card-icon">&#127873;</span>
+            <span class="hero-card-title">Gifts</span>
+            <span class="hero-card-desc"
+              >Attach meaningful gifts and messages</span
+            >
+          </div>
+          <div class="hero-card">
+            <span class="hero-card-icon">&#128140;</span>
+            <span class="hero-card-title">Share</span>
+            <span class="hero-card-desc"
+              >Send a beautiful page to your love</span
+            >
           </div>
         </div>
-        <p id="poem-container"></p>
       </section>
-      <section id="love-section">
-        <h2>Why I love you</h2>
-        <p id="reason-for-love-container"></p>
-        <button id="reason-for-love-btn">Need another reason? click me!</button>
-      </section>
-      <section id="gift-section">
-        <div>
-          <h2>My Gift To You</h2>
-          <p>
-            They say the french show the the type of their love through the kind
-            of flowers given, well I've picked multiple for you to show you my
-            love has many faces
-          </p>
+
+      <section id="about" class="about-section">
+        <h2>What is LoveBuilder?</h2>
+        <div class="about-grid">
+          <div class="about-card">
+            <span class="about-card-number">01</span>
+            <h3>Create</h3>
+            <p>
+              Sign up and use our builder to craft personalized love messages
+              with poems, reasons you love someone, and a gift section.
+            </p>
+          </div>
+          <div class="about-card">
+            <span class="about-card-number">02</span>
+            <h3>Customize</h3>
+            <p>
+              Add your own poems, write reasons why you love them, choose a gift
+              image, and add a closing message to make it truly yours.
+            </p>
+          </div>
+          <div class="about-card">
+            <span class="about-card-number">03</span>
+            <h3>Share</h3>
+            <p>
+              Generate a beautiful shareable page and send the link to your
+              special someone. Watch their face light up!
+            </p>
+          </div>
         </div>
-        <img src="/images/flower.jpg" />
-        <h1>I LOVE YOU</h1>
       </section>
     </main>
-    <footer>
+
+    <footer class="site-footer">
       <span
         >Made With Love By Isaac Shosanya |
         <a href="design-system.html">Design System</a></span
       >
     </footer>
-
-    <script src="script.js"></script>
   </body>
 </html>

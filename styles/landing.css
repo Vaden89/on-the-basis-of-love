@@ -1,0 +1,186 @@
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100dvh;
+    padding: 100px 60px 60px;
+    gap: 40px;
+    background: linear-gradient(135deg, #fff5f5 0%, #fffbf1 50%, #fff 100%);
+}
+
+.hero-content {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    > h1 {
+        font-size: 3.2rem;
+        line-height: 1.1;
+    }
+
+    > p {
+        color: #555;
+        line-height: 1.6;
+    }
+}
+
+.hero-btn {
+    display: inline-block;
+    width: fit-content;
+    padding: 14px 32px;
+    border-radius: 30px;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Oswald", sans-serif;
+    transition:
+        opacity 0.2s,
+        transform 0.2s;
+}
+
+.hero-btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+.hero-visual {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.hero-card {
+    background: white;
+    border: 1px solid #f0e4e4;
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    box-shadow: 0 4px 20px rgba(200, 16, 46, 0.06);
+    transition: transform 0.2s;
+}
+
+.hero-card:hover {
+    transform: translateY(-4px);
+}
+
+.hero-card-icon {
+    font-size: 28px;
+}
+
+.hero-card-title {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Oswald", sans-serif;
+    color: var(--primary-color);
+}
+
+.hero-card-desc {
+    font-size: 14px;
+    font-family: "Oswald", sans-serif;
+    color: #777;
+}
+
+.about-section {
+    padding: 80px 60px;
+    background-color: white;
+
+    > h2 {
+        text-align: center;
+        margin-bottom: 48px;
+        font-size: 2.6rem;
+    }
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.about-card {
+    background: #fffbf1;
+    border-radius: 16px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border: 1px solid #f5ede0;
+    transition: transform 0.2s;
+
+    > h3 {
+        font-size: 2rem;
+        font-family: "HeartLand", cursive;
+        color: var(--primary-color);
+    }
+
+    > p {
+        font-size: 1rem;
+        color: #555;
+        line-height: 1.6;
+    }
+}
+
+.about-card:hover {
+    transform: translateY(-4px);
+}
+
+.about-card-number {
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: "Oswald", sans-serif;
+    color: #f0d5d5;
+}
+
+@media screen and (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        padding: 100px 24px 40px;
+        text-align: center;
+    }
+
+    .hero-content {
+        align-items: center;
+
+        > h1 {
+            font-size: 2.4rem;
+        }
+    }
+
+    .hero-visual {
+        width: 100%;
+    }
+
+    .hero-card {
+        padding: 20px;
+    }
+
+    .about-section {
+        padding: 60px 24px;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .hero-section {
+        padding: 100px 40px 60px;
+    }
+
+    .hero-content > h1 {
+        font-size: 2.8rem;
+    }
+
+    .about-section {
+        padding: 80px 40px;
+    }
+
+    .about-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
