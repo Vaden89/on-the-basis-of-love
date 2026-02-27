@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/styles/base.css" />
+        <link rel="stylesheet" href="/styles/login.css" />
+        <link rel="stylesheet" href="/styles/components.css" />
+        <title>To My Love | Sign Up</title>
+    </head>
+    <body>
+        <main>
+            <section id="landing-section">
+                <div class="auth-img-container"></div>
+                <div class="auth-form-container">
+                    <a href="/" id="home-btn"> <-Home </a>
+                    <h1>Welcome</h1>
+                    <p>
+                        Fill in the details below to start building an
+                        experience for your loved one
+                    </p>
+                    <form id="sign-up-form" class="auth-form">
+                        <div class="form-item">
+                            <label>Full Name</label>
+                            <input
+                                required
+                                id="fullname"
+                                type="text"
+                                class="form-input"
+                                placeholder="Enter your full name"
+                            />
+                        </div>
+                        <div class="form-item">
+                            <label>Email address</label>
+                            <input
+                                required
+                                id="email"
+                                type="email"
+                                class="form-input"
+                                placeholder="Enter your email"
+                            />
+                        </div>
+                        <div class="form-item">
+                            <label>Password</label>
+                            <input
+                                required
+                                id="password"
+                                type="password"
+                                class="form-input"
+                                placeholder="Enter your password"
+                            />
+                        </div>
+                        <button>Sign Up</button>
+                    </form>
+                    <p style="text-align: center">
+                        Already have an account?
+                        <a href="login.html">Login</a>
+                    </p>
+                </div>
+            </section>
+        </main>
+        <script src="/js/sign-up.js"></script>
+    </body>
+</html>
