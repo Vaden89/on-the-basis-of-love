@@ -69,6 +69,10 @@ label {
 .auth-img-container {
     width: 50%;
     height: 100%;
+    background-image: url("/images/auth-img.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 .auth-form-container {
