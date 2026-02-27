@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/styles/base.css" />
+        <link rel="stylesheet" href="/styles/login.css" />
+        <link rel="stylesheet" href="/styles/components.css" />
+        <title>To My Love | Login</title>
+    </head>
+    <body>
+        <main>
+            <section id="landing-section">
+                <div class="auth-img-container"></div>
+                <div class="auth-form-container">
+                    <a href="/" id="home-btn"> <-Home </a>
+                    <h1>Welcome back</h1>
+                    <p>
+                        Enter your login details below to get back to building
+                        an experience for your loved on
+                    </p>
+                    <form id="login-form" class="auth-form">
+                        <div class="form-item">
+                            <label>Email address</label>
+                            <input
+                                required
+                                id="email"
+                                type="email"
+                                class="form-input"
+                                placeholder="Enter your email"
+                            />
+                        </div>
+                        <div class="form-item">
+                            <label>Password</label>
+                            <input
+                                required
+                                id="password"
+                                type="password"
+                                class="form-input"
+                                placeholder="Enter your password"
+                            />
+                        </div>
+                        <button>Login</button>
+                    </form>
+                    <p style="text-align: center">
+                        Don't have an account?
+                        <a href="sign-up.html">Sign up</a>
+                    </p>
+                </div>
+            </section>
+        </main>
+        <script src="/js/login.js"></script>
+    </body>
+</html>
